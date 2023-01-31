@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.flex-container {
+    display: flex;
+    background-color: blueviolet;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items:center;
+    align-content: center;
+}
+    .flex-container > div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: aqua;
+        font-size: 20px;
+        flex-grow: 1; /* default 0 */
+    }
+    .flex-container > div > img {
+        width: 25%;
+    }
+
+    /* #box3 {
+        /* flex-basis: 50%; */
+        /* display: none; */
+        /* visibility: hidden; 
+    } */
+
+    /* #box2 {
+        /* float: right; (dont use float tho)
+    } */
+</style>
+
+</head>
+<body>
+<!-- <section class="flex-container">
+    <div id="box1"><img src="https://picsum.photos/200/300?random=1"></div>
+    <div id="box2"><img src="https://picsum.photos/200/300?random=2"></div>
+    <div id="box3"><img src="https://picsum.photos/200/300?random=3"></div>
+    <div id="box4"><img src="https://picsum.photos/200/300?random=4"></div>
+
+    <div id="box5"><img src="https://picsum.photos/200/300?random=5"></div>
+    <div id="box6"><img src="https://picsum.photos/200/300?random=6"></div>
+    <div id="box7"><img src="https://picsum.photos/200/300?random=7"></div>
+    <div id="box8"><img src="https://picsum.photos/200/300?random=8"></div>
+
+    <div id="box9"><img src="https://picsum.photos/200/300?random=9"></div>
+    <div id="box10"><img src="https://picsum.photos/200/300?random=10"></div>
+    <div id="box11"><img src="https://picsum.photos/200/300?random=11"></div>
+    <div id="box12"><img src="https://picsum.photos/200/300?random=12"></div>
+</section> -->
+
+<section class="flex-container">
+    <div id="image-rotation"</div>
+</section>
+
+<section>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, soluta consequatur placeat enim corporis aliquid ipsum. Blanditiis numquam, assumenda eos, accusamus, ab non deleniti magni nemo illum esse ipsam cupiditate!
+    </p>
+</section>
+</body>
+
+<section class="flex-container">
+
+<script>
+let result = 0
+const imageLoop = 12;
+const imageX = 200;
+const imageY = 300;
+const imageUrl =`https://picsum.photos/${imageX}/${imageY}?random=`
+
+for (let i = 0; i < imageLoop; i++) {
+    result +=`<img src=${imageUrl}${i} />`
+}
+document.getElementById(`image-rotation`).innerHTML=result
+
+</script>
+
+</section>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+div {
+    width: 800px;
+    height: 400px;
+    
+    background-color: red;
+
+}
+
+@media (min-width: 767.98px) { 
+    div {
+        background-color: blue;
+        width: 100%;
+    }
+}
+
+@media (min-width: 991.98px) { 
+    div {
+        background-color: green;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1199.98px) { 
+    div {
+        background-color: purple;
+        width: 100%;
+        height: 500px;
+    }
+}
+/* // X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
+</style>
+
+<div>
+    Div 
+</div>
+
+</body>
+</html>
