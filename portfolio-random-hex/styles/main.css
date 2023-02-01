@@ -1,0 +1,45 @@
+/* Normalize */
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: inherit;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+h1, button {font-family: 'Anton', sans-serif;}
+
+body {
+    background-color: #f4f5f6;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#displayBox, button {
+  border: 3px solid #3333335d
+}
+
+#displayBox {
+  width: 40%;
+  background-color: #f4f5f66a;
+  padding: 40px;
+  border-radius: 14px;
+}
+
+header > h1 {
+  font-size: 4rem;
+  text-align: center;
+  filter: drop-shadow(0 0 1.1rem #0000008a);
+}
+
+button {
+  font-size: 2.0rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 14px;
+  width: 80%;
+  margin: 0 auto;
+}
+
